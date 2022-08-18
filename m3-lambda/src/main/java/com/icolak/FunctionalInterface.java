@@ -39,6 +39,13 @@ public class FunctionalInterface {
         BiFunction<String, Integer, Character> nThIndex = (str, i) -> str.charAt(i);
         System.out.println(nThIndex.apply("Java Developer", 0)); // J
 
+        System.out.println("************SUPPLIER***************");
+        Supplier<Double> randomValue = () -> Math.random();
+        System.out.println(randomValue.get());
+
+        Supplier<Boolean> isTrue = () -> true;
+        System.out.println(isTrue.get());
+
 
 
 
