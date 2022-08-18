@@ -1,9 +1,6 @@
 package com.icolak;
 
-import java.util.function.BiConsumer;
-import java.util.function.Consumer;
-import java.util.function.Function;
-import java.util.function.Predicate;
+import java.util.function.*;
 
 public class FunctionalInterface {
 
@@ -21,8 +18,30 @@ public class FunctionalInterface {
         print.accept(3,"Banana");
 
         System.out.println("************FUNCTION***************");
+
         Function<String, Integer> length = str -> str.length();
         System.out.println(length.apply("Java Developer")); // 14
+
+        Function<String, String> evenIndex = str -> {
+            StringBuilder builder = new StringBuilder();
+            for (int i = 0; i < str.length(); i++) {
+                if (i % 2 == 0) {
+                    builder.append(str.charAt(i));
+                }
+            }
+            return builder.toString();
+        };
+        System.out.println(evenIndex.apply("It returns even index char String"));
+                                                                        // I eun vnidxca tig
+
+
+        System.out.println("************BI FUNCTION***************");
+        BiFunction<String, Integer, Character> nThIndex = (str, i) -> str.charAt(i);
+        System.out.println(nThIndex.apply("Java Developer", 0)); // J
+
+
+
+
 
 
 
