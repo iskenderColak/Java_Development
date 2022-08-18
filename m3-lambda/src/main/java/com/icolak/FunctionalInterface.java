@@ -22,7 +22,7 @@ public class FunctionalInterface {
 
         System.out.println("************FUNCTION***************");
         Function<String, Integer> length = str -> str.length();
-        System.out.println(length.apply("Java Developer"));
+        System.out.println(length.apply("Java Developer")); // 14
 
 
 
