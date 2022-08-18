@@ -1,4 +1,4 @@
-package com.icolak;
+package com.icolak.sortingTask;
 
 @FunctionalInterface
 public interface Sorting {
