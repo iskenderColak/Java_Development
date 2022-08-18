@@ -1,5 +1,6 @@
 package com.icolak;
 
+import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
 
@@ -13,6 +14,11 @@ public class FunctionalInterface {
         System.out.println("************CONSUMER***************");
         Consumer<String> display = i -> System.out.println(i);
         display.accept("Consumer Interface");
+
+        System.out.println("************BI CONSUMER***************");
+        BiConsumer<Integer, String> print = (x,s) -> System.out.println(x + " kg " + s);
+        print.accept(3,"Banana");
+
 
     }
 }
