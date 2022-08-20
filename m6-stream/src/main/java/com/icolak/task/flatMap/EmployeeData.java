@@ -1,4 +1,6 @@
-package com.icolak.task;
+package com.icolak.task.flatMap;
+
+import com.icolak.task.flatMap.Employee;
 
 import java.util.Arrays;
 import java.util.stream.Stream;

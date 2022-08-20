@@ -1,4 +1,4 @@
-package com.icolak.task;
+package com.icolak.task.flatMap;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

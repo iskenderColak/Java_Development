@@ -1,9 +1,11 @@
-package com.icolak.task;
+package com.icolak.task.flatMap;
 
+
+import com.icolak.task.flatMap.Employee;
 
 import java.util.List;
 
-import static com.icolak.task.EmployeeData.readAll;
+import static com.icolak.task.flatMap.EmployeeData.readAll;
 
 public class EmployeeTest {
 
